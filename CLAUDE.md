@@ -11,11 +11,13 @@ Use the Task tool with these specialized subagents for appropriate tasks:
   - Examples: Creating components, fixing reactivity issues, performance optimization, complex state management
   - **MANDATORY RULE: ANY time you need to create or significantly modify a .vue file, you MUST delegate to vue-expert**
 - **code-reviewer**: Use after writing significant code to review quality and best practices
+- **debugger**: Use when investigating runtime errors, stack traces, or unexpected behavior — reads source files, traces data flow, and suggests minimal targeted fixes
 - **Explore**: Use for understanding codebase structure, searching for patterns, or answering questions about how components work
 - **general-purpose**: Use for complex multi-step tasks or when other agents don't fit
 
 ### Skills
 - **backend-api-test** skill: Use when writing or modifying tests in `tests/backend` directory with pytest and FastAPI TestClient
+- **create-architecture-ppt** skill: Use when asked to create or regenerate the architecture PowerPoint presentation
 
 ### MCP Tools
 - **ALWAYS use GitHub MCP tools** (`mcp__github__*`) for ALL GitHub operations
